@@ -257,7 +257,7 @@ public class PropertiesParser {
         try {
             while (stok.hasMoreTokens()) {
                 try {
-                    ints.add(new Integer(stok.nextToken().trim()));
+                    ints.add(Integer.parseInt(stok.nextToken().trim()));
                 } catch (NumberFormatException nfe) {
                     throw new NumberFormatException(" '" + vals + "'");
                 }
